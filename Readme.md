@@ -1,5 +1,5 @@
 
-[![GitHub Actions Status](https://github.com/MrLait/ShapeAreaCalculator/actions/workflows/CiDotNetApp.yml/badge.svg)](https://github.com/MrLait/ShapeAreaCalculator/actions)
+[![GitHub Actions Status](https://github.com/MrLait/ShapeAreaCalculator/actions/workflows/CiDotNetApp.yml/badge.svg)](https://github.com/MrLait/ShapeAreaCalculator/actions/workflows/CiDotNetApp.yml)
 
 #### Отклик на вакансию: [C# developer junior / middle (.net, full-stack / back-end)](https://hh.ru/vacancy/76709182?hhtmFrom=favorite_vacancy_list)
 #### Задание первое
