@@ -1,0 +1,23 @@
+version: '3.4'
+
+services:
+  # mssqldatabase.api:
+  #   environment:
+  #     - ASPNETCORE_ENVIRONMENT=Development
+  #     - ASPNETCORE_HTTP_PORTS=8080
+  #   ports:
+  #     - "8080"
+
+  mssql:
+    environment:
+      - ACCEPT_EULA=Y
+      - SA_PASSWORD=MyPass@word
+      # - MSSQL_PID=Express
+    ports:
+      - "33063:1433"
+    volumes:
+      - sql-data:/var/opt/mssql
+
+volumes:
+  sql-data:
+
