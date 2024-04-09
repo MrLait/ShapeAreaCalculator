@@ -15,6 +15,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\MsSqlLib.Application\MsSqlLib.Application.csproj" />
     <ProjectReference Include="..\MsSqlLib.Domain\MsSqlLib.Domain.csproj" />
   </ItemGroup>
 

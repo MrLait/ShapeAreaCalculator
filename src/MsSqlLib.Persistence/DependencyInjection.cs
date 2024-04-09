@@ -1,6 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using MsSqlLib.Application.Common.Interfaces;
 
 namespace MsSqlLib.Persistence
 {
@@ -15,7 +16,11 @@ namespace MsSqlLib.Persistence
             {
                 options.UseSqlServer(connectionString);
             });
-            //var serviceCollection = services.AddScoped<>
+
+            var serviceCollection = services.AddScoped<IApplicationDbContext>
+            (
+                provider => provider.GetService<ApplicationDbContext>()!
+            );
             return services;
         }
     }
