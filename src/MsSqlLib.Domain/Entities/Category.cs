@@ -1,4 +1,6 @@
-﻿namespace MsSqlLib.Domain.Entities
+﻿using System.ComponentModel.DataAnnotations.Schema;
+
+namespace MsSqlLib.Domain.Entities
 {
     public class Category
     {
@@ -6,6 +8,7 @@
         public string? Name { get; set; }
 
         //Many-to-many
-        public ICollection<Product>? Products { get; set; }
+        //[NotMapped]
+        public List<Product>? Products { get; set; }
     }
 }
