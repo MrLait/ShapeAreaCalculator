@@ -1,12 +1,16 @@
 version: '3.4'
 
 services:
-  # mssqldatabase.api:
-  #   image: mssqldatabaseapi
-  #   build:
-  #     context: .
-  #     dockerfile: src/MSSqlDatabase.API/Dockerfile
-
   mssql:
     image: mcr.microsoft.com/mssql/server:latest
     container_name: docker-ms-sql-server
+
+  mssqldatabase.api:
+    image: mssqldatabaseapi
+    build:
+      context: .
+      dockerfile: src/MSSqlDatabase.API/Dockerfile
+    depends_on:
+      - mssql
+
+  
