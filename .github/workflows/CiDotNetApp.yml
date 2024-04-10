@@ -24,7 +24,7 @@ jobs:
             ./packages
           key: ${{ runner.os }}-dotnet-${{ hashFiles('**/*.csproj') }}    
       - name: Restore dependencies
-        run: dotnet restore 
+        run: dotnet restore ShapeAreaCalculator.sln
       - name: Build
         run: dotnet build --no-restore 
       - name: Test
